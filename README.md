@@ -1,6 +1,6 @@
 # README: Complex-Valued DeepONet 
 
-This repository contains the implementation of the **Complex-Valued DeepONet** model proposed in our paper, *"Complex-Valued Deep Operator Network (DeepONet) $[\mathcal{G}]$ for Three-Dimensional Maxwell's Equations: $\mathcal{G} \in \mathbb{C}^{m \times n}$"*. Code for training and testing will be updated. 
+This repository contains the implementation of the **Complex-Valued DeepONet** model proposed in our paper, *"Complex-Valued Deep Operator Network (DeepONet) for Three-Dimensional Maxwell's Equations"*. Code for training and testing will be updated. 
 
 ## Requirements
 - Python 3.8+

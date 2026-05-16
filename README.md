@@ -8,11 +8,27 @@
 
 This repository contains the code and data for training a Complex-Valued Deep Operator Network (CV-DeepONet) as a surrogate model for time-harmonic Maxwell's equations. Two benchmark cases are provided: scattering by a metallic sphere and scattering by a metallic almond-shaped target.
 
+## Highlights
+
+Time-harmonic Maxwell's equations admit solutions in the complex domain $\mathbb{C}^n$, but standard DeepONet implementations are restricted to real-valued data in $\mathbb{R}^n$. In this work, we propose a formulation of DeepONet for complex data, define the forward pass in the complex domain, and adopt a reparametrized version of DeepONet for more efficient training. A unified framework combines a plurality of DeepONets, trained for multiple electromagnetic field components, to incorporate the boundary condition. Computational experiments on a three-dimensional metallic sphere and a metallic almond-shaped target show that the method significantly enhances the efficiency of predicting scattered fields at arbitrary high frequencies, including problems with singularity-prone solutions.
+
 ## Paper
 
 If you use this code or data, please cite:
 
-> Qile Jiang, Marc Salvadori, Dale Ota, Vijaya Shankar, Khemraj Shukla. *Complex valued Deep Operator Network (DeepONet) for three dimensional Maxwell's equations: G in C^{m x n}.* Journal of Computational Physics, vol. 562, p. 114993, 2026. https://doi.org/10.1016/j.jcp.2026.114993
+```bibtex
+@article{JIANG2026114993,
+  title   = {Complex valued Deep Operator Network (DeepONet) [G] for three dimensional Maxwell's equations: $G \in \mathbb{C}^{m \times n}$},
+  journal = {Journal of Computational Physics},
+  volume  = {562},
+  pages   = {114993},
+  year    = {2026},
+  issn    = {0021-9991},
+  doi     = {10.1016/j.jcp.2026.114993},
+  url     = {https://www.sciencedirect.com/science/article/pii/S0021999126003463},
+  author  = {Qile Jiang and Marc Salvadori and Dale Ota and Vijaya Shankar and Khemraj Shukla}
+}
+```
 
 The paper is available at: https://www.sciencedirect.com/science/article/pii/S0021999126003463
 
@@ -20,7 +36,20 @@ The paper is available at: https://www.sciencedirect.com/science/article/pii/S00
 
 This work was supported by [HyPerComp Inc.](https://www.hypercomp.net)
 
-The complex-valued neural network layers are built using the [cvnn](https://pypi.org/project/cvnn/) library.
+The complex-valued neural network layers are built using the [cvnn](https://pypi.org/project/cvnn/) library by J. Agustin Barrachina. Please also cite:
+
+```bibtex
+@software{j_agustin_barrachina_2021_4452131,
+  author    = {J Agustin Barrachina},
+  title     = {Complex-Valued Neural Networks (CVNN)},
+  month     = jan,
+  year      = 2021,
+  publisher = {Zenodo},
+  version   = {v1.0.3},
+  doi       = {10.5281/zenodo.4452131},
+  url       = {https://doi.org/10.5281/zenodo.4452131}
+}
+```
 
 ## Repository Structure
 

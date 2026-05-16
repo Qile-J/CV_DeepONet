@@ -14,7 +14,7 @@ Time-harmonic Maxwell's equations admit solutions in the complex domain $\mathbb
 
 ## Paper
 
-If you use this code or data, please cite:
+This work is published in the *Journal of Computational Physics*. If you use this code or data, please cite:
 
 ```bibtex
 @article{JIANG2026114993,
@@ -34,22 +34,9 @@ The paper is available at: https://www.sciencedirect.com/science/article/pii/S00
 
 ## Acknowledgements
 
-This work was supported by [HyPerComp Inc.](https://www.hypercomp.net)
+This work was supported by [HyPerComp Inc.](https://www.hypercomp.net), which also generated the electromagnetic field data used in both benchmark cases.
 
-The complex-valued neural network layers are built using the [cvnn](https://pypi.org/project/cvnn/) library by J. Agustin Barrachina. Please also cite:
-
-```bibtex
-@software{j_agustin_barrachina_2021_4452131,
-  author    = {J Agustin Barrachina},
-  title     = {Complex-Valued Neural Networks (CVNN)},
-  month     = jan,
-  year      = 2021,
-  publisher = {Zenodo},
-  version   = {v1.0.3},
-  doi       = {10.5281/zenodo.4452131},
-  url       = {https://doi.org/10.5281/zenodo.4452131}
-}
-```
+The complex-valued neural network layers are built using the [cvnn](https://pypi.org/project/cvnn/) library (J. Agustin Barrachina, *Complex-Valued Neural Networks (CVNN)*, v1.0.3, Zenodo, 2021, [doi:10.5281/zenodo.4452131](https://doi.org/10.5281/zenodo.4452131)).
 
 ## Repository Structure
 

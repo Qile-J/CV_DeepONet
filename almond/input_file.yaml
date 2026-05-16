@@ -1,0 +1,11 @@
+NeuralNetwork:
+  device: gpu
+  activation: crelu    
+  learning_rate: 0.001
+  latent_dim: 200
+  n_epochs: 30001
+  test_percentage: 16.666
+  branch_hidden: 128
+  trunk_hidden: 128
+  feature_size: 5
+  polynomial_lr: True

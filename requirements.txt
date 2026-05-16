@@ -1,0 +1,11 @@
+tensorflow>=2.12.0
+tensorflow_probability
+numpy
+scipy
+matplotlib
+pandas
+pyyaml
+tqdm
+cvnn
+astropy
+xmltodict

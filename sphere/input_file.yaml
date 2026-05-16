@@ -1,0 +1,39 @@
+DeepEM:
+  Frequency:
+    Nf: 101
+    df: 0.0055
+    fmax: 0.6
+    fmin: 0.05
+  Geometry/Mesh:
+    Nx: 1004
+    Ny: 1004
+    Nz: 1004
+    report: true
+    type: pec
+    xmax: 0.9886856
+    xmin: -0.9873862
+    ymax: 0.987431
+    ymin: -0.9867069
+    zmax: 0.988227
+    zmin: -0.9869933
+  NeuralNetwork:
+    Acceleration: gpu
+    ActF: crelu    
+    LRate: 0.001
+    Ldim: 200
+    ModelName: E_
+    Nep_T: 60001
+    Nep_B: 60001
+    Nepoch: 30001
+    Nprint: 200
+    BatchSize: 64 
+    Optimizer: adam
+    Plotting: False
+    TestData: 50
+    bHN: 64
+    featureL: 5
+    lbfgs: false
+    lossfn: complex_mse
+    ploy_decay_lr: True
+    nL: 5
+    tHN: 64

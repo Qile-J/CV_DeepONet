@@ -1,0 +1,11 @@
+# The orchestrator (orchestrate.py / datasets.py / prompts.py) is PURE PYTHON
+# STANDARD LIBRARY — there is nothing to pip install for it.
+#
+# What you actually need on the machine:
+#   1. The Codex CLI, authenticated:   npm install -g @openai/codex  &&  codex login
+#   2. Node.js v18+  (for Codex)
+#   3. Python 3.9+   (for the orchestrator)
+#
+# The autonomous Engineer agent installs its own ML dependencies (e.g. numpy,
+# matplotlib, and a deep-learning framework such as torch) the first time it runs,
+# so they are intentionally NOT pinned here.
